@@ -1,0 +1,210 @@
+:root {
+    /* колір текста основного #757575*/
+    /* колір текста для заголовок #212121 */
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    /* акцентный колір фону #2196F3*/
+    /* акцентный колір тексту #FFFFFF*/
+    --acсent-backgroud: #2196F3;
+    --accent-text: #FFFFFF;
+
+    /* колір фона основний  #FFFFFF */
+    /* колір фона для Hero та footer #2F303A*/
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color: #2F303A;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    }
+        /* font-weight: 400; */
+        /* font-style: normal;  за замовчуванням є у браузера   */
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    /* text-align: center; */
+}
+
+/*--- заховати заголовок--- */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* ------------------заголовок с навигацией------------- */
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--secondary-text-color);
+}
+
+.logo-accent {
+    color: var(--acсent-backgroud);
+}
+
+.nav-link {
+    font-weight: 500;
+    line-height: 1.14;
+    color: var(--secondary-text-color);
+    letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--acсent-backgroud);
+}
+
+
+
+.current {
+    color: var(--acсent-backgroud);
+}
+
+/* ----------------------------Hero-------------------- */
+.hero {
+    background: var(--secondary-background-color);
+}
+
+.title-hero {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/44);
+    color: var(--primary-background-color);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+
+}
+
+.button-hero {
+    font-weight: 700;
+    line-height: 1.87;
+    color: var(--accent-text);
+    background: var(--acсent-backgroud);
+    border-radius: 4px;
+    border-color: var(--acсent-backgroud);
+    letter-spacing: 0.06em;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+}
+
+
+/* -----------------------benefits------------------- */
+.title-benefits {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--secondary-text-color);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+/* -------------заголовок h2 для about  та team---------------- */
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    color: var(--secondary-text-color);
+    letter-spacing: 0.03em;
+    /* text-align: center; */
+}
+
+/* ---------------------- about --------------------- */
+
+/* ----------------------------team------------------ */
+.team-user {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    /* text-align: center; */
+}
+ /* font-weight: 400; за замовчуванням є у браузера */ 
+
+.team-user-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--secondary-text-color);
+    letter-spacing: 0.03em;
+    /* text-align: center;*/
+}
+
+/* --------------------------footer------- */
+.footer { font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background: var(--secondary-background-color);
+    }
+
+.footer-logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-text);
+}
+
+.address-link {
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--accent-text);
+}
+
+.contacts {
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    }
+         /* color: rgba(255, 255, 255, 0.6); */
+/* ----------------------------portfolio--------------- */
+.button-potfolio {
+    font-weight: 500;
+    line-height: 1.625;
+    color: var(--secondary-text-color);
+    letter-spacing: 0.03em;
+    /* text-align: center; */
+
+}
+
+.button-potfolio:hover,
+.button-potfolio:focus {
+    color: var(--accent-text);
+    background: var(--acсent-backgroud)
+}
+
+.title-products {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--secondary-text-color);
+    letter-spacing: 0.06em;
+}
+
+.products-item {
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+}
