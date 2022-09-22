@@ -51,6 +51,13 @@ body {
     margin: -1px;
 }
 
+.container {
+    /* outline: 2px tomato; */
+    background-color: tomato;
+    width: 1600px;
+    
+    
+}
 /* ------------------заголовок с навигацией------------- */
 .logo {
     font-family: 'Raleway';
@@ -94,6 +101,7 @@ body {
     color: var(--primary-background-color);
     text-transform: uppercase;
     letter-spacing: 0.06em;
+   
 
 }
 
