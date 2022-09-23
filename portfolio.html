@@ -10,44 +10,51 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <!-- Спочатку нормалізатор -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <!-- В нормалізаторі modern-normalize за замовчуванням заданий глобальний border-box  в своїх стилях його можна не
+        вказувати. -->
+    <!-- Потім мої стилі -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <title>WebStudio</title>
 </head>
 
 <body>
     <!-------------------------------------- Header ------------------->
-    <header>
-        
+    <header class="header">
         <a class="logo link" href="./index.html" lang="en"><span class="logo-accent">Web</span>Studio</a>
-        <nav class="container">
+        <nav class="nav-container">
             <ul class="list">
                 <li><a class="link nav-link" href="./index.html">Студія</a> </li>
                 <li><a class="link nav-link" href="./portfolio.html">Портфоліо</a> </li>
                 <li><a class="link nav-link" href="#">Контакти</a> </li>
             </ul>
         </nav>
-        </div>
+
         <div class="container">
             <ul class="list">
                 <li><a class="link contacts nav-link" href="tel:+380961111111">+38 096 111 11 11</a> </li>
                 <li><a class="link contacts nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
             </ul>
         </div>
-        <main>
+    </header>
+    <main>
 
-            <section>
-                <div class="container">
-                    <!------------------------- список кнопок-------------->
-                    <ul class="list">
-                        <li> <button class="button button-potfolio" type="button">Усі</button></li>
-                        <li> <button class="button button-potfolio" type="button">Веб-сайти</button></li>
-                        <li> <button class="button button-potfolio" type="button">Додатки</button></li>
-                        <li> <button class="button button-potfolio" type="button">Дизайн</button></li>
-                        <li> <button class="button button-potfolio" type="button">Маркетинг</button></li>
-                    </ul>
-                </div>
-                <!-------------------------наші роботи products------------------->
-                <div class="container">
-                 <ul class="list">
+        <section>
+            <div class="container">
+                <!------------------------- список кнопок-------------->
+                <ul class="list">
+                    <li> <button class="button button-potfolio" type="button">Усі</button></li>
+                    <li> <button class="button button-potfolio" type="button">Веб-сайти</button></li>
+                    <li> <button class="button button-potfolio" type="button">Додатки</button></li>
+                    <li> <button class="button button-potfolio" type="button">Дизайн</button></li>
+                    <li> <button class="button button-potfolio" type="button">Маркетинг</button></li>
+                </ul>
+            </div>
+            <!-------------------------наші роботи products------------------->
+            <div class="container">
+                <ul class="list">
                     <li>
                         <img src="./images/tehnocrack.jpg" alt="технокряк" width="370">
                         <h3 class="title-products">Технокряк</h3>
@@ -70,7 +77,7 @@
                     </li>
                     <li>
                         <img src="./images/boxes.jpg" alt="боксес" width="370">
-                        <h3 class="title-products">Проект<span lang="en>">Boxes</span></h3>
+                        <h3 class="title-products">Проект <span lang="en">Boxes</span></h3>
                         <p class="products-item">Додаток</p>
                     </li>
                     <li>
@@ -93,25 +100,22 @@
                         <h3 class="title-products"> <span lang="en">Growing Business</span></h3>
                         <p class="products-item">Додаток</p>
                     </li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-        <!-- ------------------------------------- footer -----------------  --> -->
-            <div class="container">
-                <footer class="footer">
-                    <a class="link footer-logo" href="./index.html" lang="en"> <span class="logo-accent">Web</span>Studio</a>
-                    <address>
-                        <a class="link address-link" href="https://goo.gl/maps/qexC5noHdbvhc4Kc7" target="_blank"
-                            rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
-                    </address>
-                    <ul class="list">
-                        <li><a class="link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a class="link contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                    </ul>
-                </footer>
+                </ul>
             </div>
-
+        </section>
+    </main>
+    <!--------------------------------------- footer -----------------  --> -->
+        <footer class="footer-nav">
+            <a class="link footer-logo" href="./index.html" lang="en"> <span class="logo-accent">Web</span>Studio</a>
+            <address>
+                <a class="link address-link" href="https://goo.gl/maps/qexC5noHdbvhc4Kc7" target="_blank"
+                    rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+            </address>
+            <ul class="list">
+                <li><a class="link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="link contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+        </footer>
 </body>
 
 </html>
