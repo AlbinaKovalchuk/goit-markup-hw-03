@@ -14,6 +14,8 @@
     --secondary-background-color: #2F303A;
 }
 
+/* font-weight: 400; */
+/* font-style: normal за замовчуванням є у браузера   */
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -21,18 +23,17 @@ body {
     color: var(--primary-text-color);
 }
 
-/* font-weight: 400; */
-/* font-style: normal за замовчуванням є у браузера   */
-
 .link {
+    /* display: flex; */
     text-decoration: none;
-    display: flex;
+
 }
 
 .list {
-    list-style: none;
     display: flex;
-
+    list-style: none;
+    outline: 2px solid black;
+    /* background-color: tomato; */
 }
 
 .button {
@@ -94,11 +95,19 @@ img {
 
 /* ------------------заголовок с навигацией------------- */
 .header {
-    display: flex;
     padding-top: 24px;
+   background-color: aqua;
+   
 }
 
-/* margin-bottom:200px;} */
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.heder-conect {
+    margin-left: auto;
+    background-color:blueviolet;}
+    
 
 .logo {
     font-family: 'Raleway';
@@ -107,21 +116,23 @@ img {
     line-height: 1.19;
     color: var(--secondary-text-color);
 }
-
 .logo-accent {
     color: var(--acсent-backgroud);
 }
+.logo.link { margin-right: 93px;}
 
-/* .nav-container{display: flex;
-    justify-content: left;
-} */
+.nav-sait {
+    display: flex;
+    align-items: center;
+    outline: 5px solid black;
+}
+.nav.list{ gap: 50px;}
 
 .nav-link {
-    font-weight: 500;
+   font-weight: 500;
     line-height: 1.14;
     color: var(--secondary-text-color);
     letter-spacing: 0.02em;
-    display: flex;
 }
 
 .nav-link:hover,
@@ -129,23 +140,34 @@ img {
     color: var(--acсent-backgroud);
 }
 
+.contacts {
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: chartreuse;
+
+}
+
 .current {
     color: var(--acсent-backgroud);
 }
 
-
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 /* ----------------------------Hero-------------------- */
-
 .hero {
-    width: 1200;
-    height: 600px;
+    width: 1600px;
+    margin: 0 auto;
     background: var(--secondary-background-color);
     text-align: center;
     padding: 200px 452px 280px 452px;
 }
 
-.title-hero {
+.hero-title {
     width: 696px;
     font-weight: 900;
     font-size: 44px;
@@ -153,12 +175,11 @@ img {
     color: var(--primary-background-color);
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    text-align: center;
-    padding-bottom: 30px;
-
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
-.button-hero {
+.hero-button {
     width: 216px;
     font-weight: 700;
     line-height: 1.87;
@@ -167,37 +188,42 @@ img {
     border-radius: 4px;
     border-color: var(--acсent-backgroud);
     letter-spacing: 0.06em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     align-items: center;
     padding: 10px 32px;
-
-
 }
 
-
 /* -----------------------benefits------------------- */
-.title-benefits {
+
+.benefits-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     color: var(--secondary-text-color);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
+
 }
 
 /* -------------заголовок h2 для about  та team---------------- */
-.title {
+.about-title,
+.team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     color: var(--secondary-text-color);
     letter-spacing: 0.03em;
-    /* text-align: center; */
+    text-align: center;
+    margin-bottom: 50px;
+    background: tomato;
 }
 
 /* ---------------------- about --------------------- */
 
+
 /* ----------------------------team------------------ */
+
+
 .team-user {
     font-size: 16px;
     line-height: 1.18;
@@ -240,22 +266,17 @@ img {
     color: var(--accent-text);
 }
 
-.contacts {
-    font-style: normal;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-}
+
 
 /* color: rgba(255, 255, 255, 0.6); */
 /* ----------------------------portfolio--------------- */
 .button-potfolio {
+    min-width: 38px;
     font-weight: 500;
     line-height: 1.625;
     color: var(--secondary-text-color);
     letter-spacing: 0.03em;
-    /* text-align: center; */
-
+    padding: 6px 22px;
 }
 
 .button-potfolio:hover,
@@ -264,7 +285,7 @@ img {
     background: var(--acсent-backgroud)
 }
 
-.title-products {
+.products-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
