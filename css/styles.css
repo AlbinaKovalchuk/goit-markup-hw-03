@@ -97,12 +97,12 @@ img {
 .header {
     padding-top: 24px;
    background-color: aqua;
-   
 }
 
 .header-container {
     display: flex;
     align-items: center;
+  
 }
 .heder-conect {
     margin-left: auto;
