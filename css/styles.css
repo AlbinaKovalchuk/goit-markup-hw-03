@@ -355,14 +355,6 @@ img {
     background: var(--acсent-backgroud)
 }
 
-/* .container 
-    width: 1170 + 2*15px= 1200;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    outline: 1px solid black; */
-
 .container.potfolio {box-sizing: content-box;}
 
 .products-card {
