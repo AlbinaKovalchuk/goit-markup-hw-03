@@ -1,23 +1,6 @@
 /* outline: 5px solid black; */
 /* background-color:blueviolet; */
 
-
-
-/* ??? li задать   и отступи
-margin-bottom: 10px; */
-
-/* list  ИМЕЕТ СВОЙСТВА 
-.list {
-    display: flex;
-    list-style: none;
-}
-ТО ЕСТЬ НУЖНО ВСЕМ li добавить  
-свойствA
-justify-content: center; ИЛИ
- align-items: center; 
-*/
-
-
 :root {
     /* колір текста основного #757575*/
     /* колір текста для заголовок #212121 */
@@ -44,7 +27,7 @@ body {
 }
 
 .link {
-    display: flex; 
+    display: flex;
     text-decoration: none;
 }
 
@@ -109,8 +92,6 @@ img {
     margin: 0 auto;
     /* padding-bottom: 60px; убрала так в футере вылазила 
     посмотреть у остальных */
-    /* outline: 5px solid tomato; */
-
 }
 
 .section {
@@ -122,17 +103,17 @@ img {
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
-
-}
-
-.header-container {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
+
 }
 
 .heder-conect {
+    display: flex;
+    align-items: center;
     margin-left: auto;
-}
+    }
 
 .logo {
     font-family: 'Raleway';
@@ -158,6 +139,7 @@ img {
 
 
 .nav.list {
+    display: flex;
     gap: 50px;
 }
 
@@ -186,6 +168,7 @@ img {
 
 /* ----------------------------Hero-------------------- */
 .hero {
+    width: 1200px;
     margin: 0 auto;
     background: var(--secondary-background-color);
     text-align: center;
@@ -244,9 +227,6 @@ img {
     letter-spacing: 0.03em;
 }
 
-
-
-
 /* -------------заголовок h2 для about  та team---------------- */
 .about-title,
 .team-title {
@@ -270,7 +250,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
+}
 
 .card {
     max-width: 270px;
@@ -280,8 +260,8 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     padding: 30px 0px;
-    }
-    
+}
+
 .card-image {
     display: block;
 }
@@ -291,7 +271,7 @@ img {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
-   }
+}
 
 .team-user-name {
     font-weight: 500;
@@ -311,14 +291,14 @@ img {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    padding-top:60px ;
+    padding-top: 60px;
     padding-bottom: 60px;
-   /* ? letter-spacing: */
+    /* ? letter-spacing: */
 }
-.container-logo{ width: 145px;
-     margin-bottom :20px;
-     outline: 1px solid red;
-     
+
+.container-logo {
+    width: 145px;
+    margin-bottom: 20px;
 }
 
 .footer-logo {
@@ -328,7 +308,7 @@ img {
     font-size: 26px;
     line-height: 1.19;
     color: var(--accent-text);
-    
+
 }
 
 .address-link {
@@ -340,17 +320,22 @@ img {
 
 .container-address {
     margin-bottom: 9px;
- outline: 1px solid orange;
-
 }
 
-.container-contacts {margin-bottom: 9px;
-    outline: 1px solid green;}
 
-----------------------------portfolio--------------- */
+.container-contacts {
+    margin-bottom: 9px;
+}
+
+.foot-contacts {
+    text-decoration-color: rgba(255, 255, 255, 0.6);
+}
+
+/* ----------------------------portfolio--------------- */
 .btn-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 34px;
 
 }
 
@@ -378,19 +363,26 @@ img {
     margin: 0 auto;
     outline: 1px solid black; */
 
+.container.potfolio {box-sizing: content-box;}
 
 .products-card {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
     gap: 30px;
     background: var(--primary-background-color);
-    /* border: 1px solid #EEEEEE;   */
-
+    margin-bottom: 94px;
+    /* flex-basis: calc((100% - 30px) / 3); */
+    
 }
 
-.products {
-    max-width: 370px;
-    flex-basis: calc((100% - 30px) / 3);
+.products-card-list {
+    border: 1px solid #EEEEEE;
+}
+
+.products-text {
+    padding: 20px 24px;
 }
 
 .products-title {
@@ -399,19 +391,11 @@ img {
     line-height: 2;
     color: var(--secondary-text-color);
     letter-spacing: 0.06em;
-    padding-top: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
+    margin-bottom: 4px;
 }
 
 .products-item {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 20px;
 }
-
-
-/* outline: 1px solid green; */
