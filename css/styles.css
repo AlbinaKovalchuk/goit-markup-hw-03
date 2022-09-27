@@ -90,30 +90,40 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    /* padding-bottom: 60px; убрала так в футере вылазила 
-    посмотреть у остальных */
+    outline: 2px solid tomato;
 }
 
 .section {
+    /* outline: 2px solid green; */
     padding-top: 94px;
-    /* padding-bottom: 94px;не треба,бо між section виходить 2*94*/
+    padding-bottom: 94px;
 }
 
 /* ------------------заголовок с навигацией------------- */
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
-    display: flex;
-    align-items: center;
     border-bottom: 1px solid #ECECEC;
-
 }
 
+/* короб для лого та кроба с навигацией та контактами */
+.container-header {
+    display: flex;
+    align-items: center;
+}
+
+/* короб для навигации  */
+.nav-sait {
+    display: flex;
+    align-items: center;
+}
+
+/* короб для телеф та емайла */
 .heder-conect {
     display: flex;
     align-items: center;
     margin-left: auto;
-    }
+}
 
 .logo {
     font-family: 'Raleway';
@@ -123,7 +133,6 @@ img {
     color: var(--secondary-text-color);
 }
 
-
 .logo-accent {
     color: var(--acсent-backgroud);
 }
@@ -132,15 +141,10 @@ img {
     margin-right: 93px;
 }
 
-.nav-sait {
-    display: flex;
-    align-items: center;
-}
-
-
 .nav.list {
     display: flex;
     gap: 50px;
+
 }
 
 .nav-link {
@@ -168,7 +172,7 @@ img {
 
 /* ----------------------------Hero-------------------- */
 .hero {
-    width: 1200px;
+    /* width: 1200px; */
     margin: 0 auto;
     background: var(--secondary-background-color);
     text-align: center;
@@ -240,6 +244,10 @@ img {
 }
 
 /* ---------------------- about --------------------- */
+.section.about {
+    padding-top: 0px;
+}
+
 .about.list {
     display: flex;
     justify-content: space-between;
@@ -285,15 +293,15 @@ img {
 
 /* --------------------------footer------- */
 .footer {
-    width: 1200px;
     margin: 0 auto;
     background: var(--secondary-background-color);
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 14px;
     padding-top: 60px;
     padding-bottom: 60px;
-    
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
 }
 
 .container-logo {
@@ -328,24 +336,27 @@ img {
 }
 
 .foot-contacts {
-    text-decoration-color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* ----------------------------portfolio--------------- */
 .btn-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 
 }
 
 .button-potfolio {
-    min-width: 38px;
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.625;
     color: var(--secondary-text-color);
     letter-spacing: 0.03em;
     padding: 6px 22px;
+}
+
+.btn-item {
     margin-left: 8px;
 }
 
@@ -355,26 +366,18 @@ img {
     background: var(--acсent-backgroud)
 }
 
-.container.potfolio {box-sizing: content-box;}
-
 .products-card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
     gap: 30px;
     background: var(--primary-background-color);
-    margin-bottom: 94px;
     /* flex-basis: calc((100% - 30px) / 3); */
-    
 }
 
-.products-card-list {
-    border: 1px solid #EEEEEE;
-}
 
 .products-text {
     padding: 20px 24px;
+    border: 1px solid #EEEEEE;
 }
 
 .products-title {
